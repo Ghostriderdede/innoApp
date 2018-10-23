@@ -1,0 +1,58 @@
+{
+    "users" : [ {
+        "id": 1,
+        "recognition" : "i13az00",
+        "password" : "admin123",
+        "isAdmin" : true
+      },
+      {
+          "id": 2,
+          "recognition" : "e13az00",
+          "password" : "user123",
+          "isAdmin" : false
+      }
+    ],
+    "posts" : [
+      {
+        "meta" : {
+          "id": 1,
+          "author" : "e13az00"
+        },
+        "content" : {
+          "title" : "Gute Idee",
+          "description" : "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet"
+        },
+        "status" : {
+          "count" : 0,
+          "approved" : false
+        }
+      },
+      {
+        "meta" : {
+          "id": 2,
+          "author" : "e13az00"
+        },
+        "content" : {
+          "title" : "Diese Innovation sollten wir berücksichtigen",
+          "description" : "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet"
+        },
+        "status" : {
+          "count" : 0,
+          "approved" : false
+        }
+      }
+    ],
+    "postsTouched" : [ {
+        "id": 1,
+        "recognition" : "i13az00",
+        "password" : "admin123",
+        "isAdmin" : true
+      },
+      {
+          "id": 2,
+          "recognition" : "e13az00",
+          "password" : "user123",
+          "isAdmin" : false
+      }
+    ]
+  }
