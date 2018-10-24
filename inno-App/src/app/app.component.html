@@ -3,17 +3,12 @@
   <h1>
     Welcome to {{ title }}!
   </h1>
-  <img width="300" alt="Angular Logo" src="./images/Logo_DVAG.jpg">
+  <img width="200" alt="Angular Logo" src="../assets/images/Logo_DVAG.jpg">
 </div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<h2> Bitte melden Sie sich an, um die App zu nutzen: </h2>
+<form>
+    <input placeholder="Ihre Kennung" (keyup)="userID($event)"/>
+    <br>
+    <input placeholder="Passwort" type="password" (keyup)="userPW($event)"/>
+</form>
+    <button (click)="printUser()">Anmelden</button>
