@@ -1,0 +1,10 @@
+<h2> Bitte melden Sie sich an, um die App zu nutzen: </h2>
+<form>
+    <input placeholder="Ihre Kennung" (keyup)="userID($event)"/>
+    <br>
+    <input placeholder="Passwort" type="password" (keyup)="userPW($event)"/>
+</form>
+    <button (click)="printUser()">Anmelden</button>
+    <router-outlet></router-outlet>
+
+    <a [routerLink]="['/dashboard']">Dashboard</a>
