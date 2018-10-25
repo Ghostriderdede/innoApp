@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { User } from '../models/user';
-import { Router } from '@angular/router'
+import { Router } from '@angular/router';
+import { DataService } from '../services/data-service';
+import { Observable, of } from 'rxjs';
+import { map, filter, reduce, tap, mergeMap } from 'rxjs/operators';
 
 @Component({
   selector: 'app-login',
@@ -9,21 +12,27 @@ import { Router } from '@angular/router'
 })
 export class LoginComponent implements OnInit {
 
-  constructor(private router: Router) {}
+  constructor(private router: Router,
+              private data: DataService) {}
 
   title = 'app';
   userInputID = '';
   userInputPW = '';
   user: User;
+  beData: any;
+  logUser = new User();
 
   ngOnInit() {
     const user = new User();
     this.user = user;
+
+    this.data.getUsers().subscribe(
+      respone => this.beData = respone
+    );
   }
 
   userID(event: any) {
     this.userInputID = event.target.value;
-    console.log(this.userInputID);
     if (this.userID!== undefined) {
       this.user.ID = this.userInputID;
     }
@@ -31,15 +40,22 @@ export class LoginComponent implements OnInit {
 
   userPW(event: any) {
     this.userInputPW = event.target.value;
-    console.log(this.userInputPW);
     if (this.userPW !== undefined) {
       this.user.PW = this.userInputPW;
     }
   }
 
-  printUser() {
-    console.log(this.user);
-    this.router.navigate(['./app-dashboard']);
+  checkCredentials(id, pw) {
+    for (let user of this.beData) {
+      if (user.recognition === id && user.password === pw) {
+          this.logUser = user
+          this.router.navigate(['./app-dashboard']);
+          break;
+      }
+    }
+  }
 
+  printUser() {
+    this.checkCredentials(this.user.ID, this.user.PW);
   }
 }
