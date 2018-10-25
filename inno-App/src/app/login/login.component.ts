@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { User } from '../models/user';
+import { Router } from '@angular/router'
 
 @Component({
   selector: 'app-login',
@@ -7,6 +8,8 @@ import { User } from '../models/user';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
+
+  constructor(private router: Router) {}
 
   title = 'app';
   userInputID = '';
@@ -36,5 +39,7 @@ export class LoginComponent implements OnInit {
 
   printUser() {
     console.log(this.user);
+    this.router.navigate(['./app-dashboard']);
+
   }
 }
