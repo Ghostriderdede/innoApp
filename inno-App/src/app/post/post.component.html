@@ -1,6 +1,7 @@
-<h2>POST HEADER</h2>
+<div *ngFor = "let post of posts">
+<h2>{{post.content.title}}</h2>
 <p>
-  Description
+  {{post.content.description}}
 </p>
 
 <p>Count</p>
@@ -8,3 +9,4 @@
 <button>UP</button>
 
 <button>DOWN</button>
+</div>

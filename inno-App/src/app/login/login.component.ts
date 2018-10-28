@@ -18,14 +18,10 @@ export class LoginComponent implements OnInit {
   title = 'app';
   userInputID = '';
   userInputPW = '';
-  user: User;
+  user = new User();
   beData: any;
-  logUser = new User();
 
   ngOnInit() {
-    const user = new User();
-    this.user = user;
-
     this.data.getUsers().subscribe(
       respone => this.beData = respone
     );
@@ -48,7 +44,7 @@ export class LoginComponent implements OnInit {
   checkCredentials(id, pw) {
     for (let user of this.beData) {
       if (user.recognition === id && user.password === pw) {
-          this.logUser = user
+          this.user = user
           this.router.navigate(['./app-dashboard']);
           break;
       }

@@ -9,6 +9,7 @@ import { LoginComponent } from './login/login.component';
 import { HttpClientModule } from '@angular/common/http';
 import { PostComponent } from './post/post.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { AddingComponent } from './adding/adding.component';
 
 
 @NgModule({
@@ -18,6 +19,7 @@ import { NavbarComponent } from './navbar/navbar.component';
     LoginComponent,
     PostComponent,
     NavbarComponent,
+    AddingComponent,
   ],
   imports: [
     NgbModule,

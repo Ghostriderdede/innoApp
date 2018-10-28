@@ -15,4 +15,12 @@ export class DataService {
   getUsers(): Observable<any> {
      return this.http.get( this.url + "/users");//.map((res: Response) => res.json())
   }
+
+  getPosts(): Observable<any> {
+    return this.http.get( this.url + "/posts");
+  }
+
+  getUserPosts(userID: any): Observable<any> {
+    return this.http.get (this.url + "/posts" + userID );
+  }
 }
