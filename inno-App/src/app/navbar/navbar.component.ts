@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
-  //public isAdmin = true;
+  public isAdmin = true;
   constructor() { }
 
   ngOnInit() {

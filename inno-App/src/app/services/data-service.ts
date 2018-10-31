@@ -21,6 +21,10 @@ export class DataService {
     return this.http.get( this.url + "/posts");
   }
 
+  getPostsAdmin(): Observable<any> {
+    return this.http.get( this.url + "/postsToCheck");
+  }
+
   getUserPosts(userID: any): Observable<any> {
     return this.http.get (this.url + "/posts" + userID );
   }

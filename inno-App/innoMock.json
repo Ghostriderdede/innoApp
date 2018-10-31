@@ -18,19 +18,25 @@
       "id": 1,
       "Header": "Gute Idee",
       "Description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet",
-      "count" : 2
+      "count": 2
     },
     {
       "id": 2,
       "Header": "Diese Innovation sollten wir berücksichtigen",
       "Description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet",
-      "count" : 2
+      "count": 2
     },
     {
       "Header": "DooDooddd",
       "Description": "dasfhvfasvdavsasv",
       "id": "7918503a-edb0-4620-a999-61876fbd7c4c",
-      "count" : 2
+      "count": 2
+    },
+    {
+      "Header": "agbhaerhgerdxbdfrxb",
+      "Description": "rddbrdbxfbfgbngf",
+      "id": "45ae7a00-9e32-4b3a-bfb0-97f70accd084",
+      "count": 0
     }
   ],
   "postsTouched": [
@@ -46,5 +52,19 @@
       "password": "user123",
       "isAdmin": false
     }
+  ],
+  "postsToCheck" : [
+    {
+    "Header": "agbhaerhgerdxbdfrxb",
+    "Description": "rddbrdbxfbfgbngf",
+    "id": "45ae7a00-9e32-4b3a-bfb0-97f70accd084",
+    "approved" : false
+  },
+  {
+  "Header": "agbhaerhgerdxbdfrxb",
+  "Description": "rddbrdbxfbfgbngf",
+  "id": "45ae7a00-9e32-4b3a-bfb0-97f70accd084",
+  "approved" : false
+  }
   ]
 }

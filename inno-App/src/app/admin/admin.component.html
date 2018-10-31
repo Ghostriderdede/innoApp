@@ -1,0 +1,17 @@
+<p>
+  admin works!
+</p>
+
+<div *ngFor = "let post of posts" class = "card">
+<h2>{{post.Header}}</h2>
+<p>
+  {{post.Description}}
+</p>
+
+<button (click) ="aprove(post)">Akzeptieren</button>
+
+<button (click) ="reject(post)">Ablehnen</button>
+</div>
+
+
+<app-navbar></app-navbar>

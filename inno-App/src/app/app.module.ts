@@ -10,6 +10,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { PostComponent } from './post/post.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AddingComponent } from './adding/adding.component';
+import { AdminComponent } from './admin/admin.component';
 
 
 @NgModule({
@@ -20,6 +21,7 @@ import { AddingComponent } from './adding/adding.component';
     PostComponent,
     NavbarComponent,
     AddingComponent,
+    AdminComponent,
   ],
   imports: [
     NgbModule,
