@@ -1,9 +1,11 @@
 <form>
-<input placeholder="Ihre Idee"/>
+<input placeholder="Ihre Idee" (keyup)="postHeader($event)"/>
 <br>
-<textarea placeholder="Beschreiben Sie Ihre Idee" rows="6"></textarea>
+<textarea placeholder="Beschreiben Sie Ihre Idee" rows="6" (keyup)="postDescription($event)"></textarea>
 </form>
 
 <button (click) ="sendPost()">Idee veröffentlichen</button>
 
 <p>Bitte beachten Sie, dass Ihre Idee zunächst von einem Administratoren Team geprüft wird, bevor sie in der App erscheint</p>
+
+<app-navbar></app-navbar>
