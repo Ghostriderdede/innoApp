@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
@@ -10,9 +10,11 @@ import { HttpClientModule } from '@angular/common/http';
 import { PostComponent } from './post/post.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AddingComponent } from './adding/adding.component';
+import {MatIconModule } from '@angular/material';
 
 
 @NgModule({
+  exports:[MatIconModule],
   declarations: [
     AppComponent,
     DashboardComponent,
@@ -28,6 +30,7 @@ import { AddingComponent } from './adding/adding.component';
     HttpClientModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
 export class AppModule { }

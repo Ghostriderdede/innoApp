@@ -1,8 +1,21 @@
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+<footer class="footer">
+<nav mat-tab-nav-bar>
 
-<nav id="nabvar">
-  <a routerLink="/adding">Idee</a>
-  <a routerLink="/app-dashboard">Dashboard</a>
-  <a href="#">Ausloggen</a>
-  <a *ngIf = "isAdmin">Admin</a>
+  <a *ngFor="let n of nav" mat-tab-link routerLink="/{{n.routeLink}}" >
+    <i class="material-icons" > {{n.icon}}</i>
+  </a>
+  <!--<a routerLink="/app-dashboard">
+    <i class="material-icons"></i>
+  </a>
+
+  <a href="#">
+    <i class="material-icons">
+      power_settings_new
+    </i>
+   </a>
+  <a *ngIf = "isAdmin">Admin</a>-->
 </nav>
+
+</footer>

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {Navigation} from "../core/interface/navigation.interface";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-navbar',
@@ -6,12 +8,24 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
+  public nav: Array<Navigation>
   //public isAdmin = true;
-  constructor() { }
+  constructor(
+  ) { }
 
   ngOnInit() {
+  this.nav = this.navigation;
 
 
   }
+  private get navigation(): Array<Navigation> {
+    return [
+      {routeLink: 'adding', icon:'wb_incandescent'},
+      {routeLink: 'app-dashboard', icon: 'trending_up'},
+      {routeLink: 'login', icon: 'power_settings_new'},
+
+    ]
+  }
+
 
 }
