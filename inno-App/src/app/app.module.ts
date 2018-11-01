@@ -12,21 +12,22 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { AddingComponent } from './adding/adding.component';
 import {MatIconModule } from '@angular/material';
 import { AdminComponent } from './admin/admin.component';
+import {NavbarModule} from './navbar/navbar.module';
 
 
 @NgModule({
-  exports:[MatIconModule],
+  exports: [ MatIconModule],
   declarations: [
     AppComponent,
     DashboardComponent,
     LoginComponent,
     PostComponent,
-    NavbarComponent,
     AddingComponent,
     AdminComponent,
   ],
   imports: [
     NgbModule,
+    NavbarModule,
     BrowserModule,
     AppRoutingModule,
     HttpClientModule
