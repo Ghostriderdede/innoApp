@@ -6,6 +6,7 @@
 
   <a *ngFor="let n of nav" mat-tab-link routerLink="/{{n.routeLink}}" >
     <i class="material-icons" > {{n.icon}}</i>
+    <!-- <i *ngIf = "isAdmin" class="material-icons"> Admin </i> -->
   </a>
 
 </nav>
