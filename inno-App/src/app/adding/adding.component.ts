@@ -20,6 +20,7 @@ export class AddingComponent implements OnInit {
 
   sendPost() {
     this.post.id = this.operation.newGuid();
+    this.post.count = 0;
     this.data.putPost(this.post).subscribe(
       respone => console.log(respone),
       error => console.log(error)

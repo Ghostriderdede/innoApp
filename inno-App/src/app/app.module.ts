@@ -10,7 +10,11 @@ import { HttpClientModule } from '@angular/common/http';
 import { PostComponent } from './post/post.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AddingComponent } from './adding/adding.component';
+<<<<<<< HEAD
 import {MatIconModule } from '@angular/material';
+=======
+import { AdminComponent } from './admin/admin.component';
+>>>>>>> logic
 
 
 @NgModule({
@@ -22,6 +26,7 @@ import {MatIconModule } from '@angular/material';
     PostComponent,
     NavbarComponent,
     AddingComponent,
+    AdminComponent,
   ],
   imports: [
     NgbModule,
