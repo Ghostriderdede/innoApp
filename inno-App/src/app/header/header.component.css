@@ -1,8 +1,8 @@
 mat-toolbar {
-  display: flex;
   background-color: #C2A12D;
-  top: 0;
+  display: flex;
+  scroll-behavior: smooth;
   width: 100%;
-  left: 0;
+  height: 60px;
   line-height: 60px;
 }
