@@ -8,15 +8,9 @@ import {Router} from "@angular/router";
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
-<<<<<<< HEAD
-  public nav: Array<Navigation>
-  //public isAdmin = true;
-  constructor(
-  ) { }
-=======
+  nav: Navigation[];
   public isAdmin = true;
   constructor() { }
->>>>>>> logic
 
   ngOnInit() {
   this.nav = this.navigation;
