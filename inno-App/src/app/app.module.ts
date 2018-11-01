@@ -12,6 +12,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { AddingComponent } from './adding/adding.component';
 import {MatIconModule } from '@angular/material';
 import { AdminComponent } from './admin/admin.component';
+import { HeaderComponent } from './header/header.component';
 
 
 @NgModule({
@@ -24,6 +25,7 @@ import { AdminComponent } from './admin/admin.component';
     NavbarComponent,
     AddingComponent,
     AdminComponent,
+    HeaderComponent,
   ],
   imports: [
     NgbModule,

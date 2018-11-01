@@ -1,3 +1,4 @@
+
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
 <footer class="footer">
@@ -6,23 +7,11 @@
   <a *ngFor="let n of nav" mat-tab-link routerLink="/{{n.routeLink}}" >
     <i class="material-icons" > {{n.icon}}</i>
   </a>
-  <!--<a routerLink="/app-dashboard">
-    <i class="material-icons"></i>
-  </a>
-
-  <a href="#">
-    <i class="material-icons">
-      power_settings_new
-    </i>
-   </a>
-  <a *ngIf = "isAdmin">Admin</a>-->
 
 
-<nav id="nabvar">
-  <a routerLink="/adding">Idee</a>
-  <a routerLink="/app-dashboard">Dashboard</a>
-  <a *ngIf = "isAdmin" routerLink="/admin">Admin</a>
-  <a href="#">Ausloggen</a>
+
+
+
 </nav>
 
 </footer>
