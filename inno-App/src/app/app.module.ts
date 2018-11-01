@@ -12,11 +12,9 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { AddingComponent } from './adding/adding.component';
 import {MatIconModule } from '@angular/material';
 import { AdminComponent } from './admin/admin.component';
-<<<<<<< HEAD
 import { HeaderComponent } from './header/header.component';
-=======
 import {NavbarModule} from './navbar/navbar.module';
->>>>>>> c187f5cfdfb6b22d5f425583811963a3e8870e92
+
 
 
 @NgModule({
