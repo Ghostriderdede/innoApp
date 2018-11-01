@@ -1,14 +1,22 @@
 <div *ngFor = "let post of posts" class = "card">
-<h2>{{post.Header}}</h2>
-<p>
+
+  <h2>{{post.Header}}</h2>
+
+  <button (click) ="upvote(post)">UP</button>
+  <button (click) ="downvote(post)">DOWN</button>
+  <p>{{post.count}}</p>
+
+
+
+  <p>
   {{post.Description}}
-</p>
+  </p>
 
-<p>{{post.count}}</p>
 
-<button (click) ="upvote(post)">UP</button>
 
-<button (click) ="downvote(post)">DOWN</button>
+
+<div style="clear:both;"></div>
+
 </div>
 
 

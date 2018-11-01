@@ -1,10 +1,10 @@
 
 nav {
-  background-color: gold;
+  background-color: #C2A12D;
   display: flex;
-  margin: 0;
-  padding: 0;
-
+  scroll-behavior: smooth;
+  position: fixed;
+  width: 100%;
 }
 
 

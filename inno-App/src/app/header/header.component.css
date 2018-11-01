@@ -1,0 +1,8 @@
+mat-toolbar {
+  display: flex;
+  background-color: #C2A12D;
+  top: 0;
+  width: 100%;
+  left: 0;
+  line-height: 60px;
+}
