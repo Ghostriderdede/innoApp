@@ -20,6 +20,7 @@ export class LoginComponent implements OnInit {
   user = new User();
   beData: any;
 
+
   ngOnInit() {
     this.data.getUsers().subscribe(
       respone => this.beData = respone

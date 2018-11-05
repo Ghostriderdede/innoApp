@@ -6,3 +6,13 @@ mat-toolbar {
   height: 60px;
   line-height: 60px;
 }
+
+.header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  left: 0;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  line-height: 60px;
+}

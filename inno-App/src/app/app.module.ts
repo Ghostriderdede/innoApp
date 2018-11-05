@@ -11,6 +11,7 @@ import { PostComponent } from './post/post.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AddingComponent } from './adding/adding.component';
 import {MatIconModule } from '@angular/material';
+import {MatGridListModule} from '@angular/material/grid-list';
 import { AdminComponent } from './admin/admin.component';
 import { HeaderComponent } from './header/header.component';
 import {NavbarModule} from './navbar/navbar.module';
@@ -33,7 +34,8 @@ import {NavbarModule} from './navbar/navbar.module';
     NavbarModule,
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    MatGridListModule
   ],
   providers: [],
   bootstrap: [AppComponent],

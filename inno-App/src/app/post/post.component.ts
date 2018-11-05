@@ -10,6 +10,8 @@ export class PostComponent implements OnInit {
   posts: any;
   upvoted = false;
   downvoted = false;
+  status: boolean = false;
+  statusD: boolean = false;
 
   constructor() { }
 
@@ -17,18 +19,26 @@ export class PostComponent implements OnInit {
   }
 
   upvote(post) {
-    if (!this.upvoted || this.downvoted) {
-      post.count += 1;
+    if (this.upvoted) {
+      this.status = !this.status;
+      post.count -= 1;
+      this.upvoted = false;
+    } else {
       this.upvoted = true;
-      this.downvoted = false;
+      post.count += 1;
+      this.status = !this.status;
     }
   }
 
   downvote(post) {
-    if (!this.downvoted || this.upvoted) {
-        post.count -= 1;
-        this.downvoted = true;
-        this.upvoted = false;
+    if (this.downvoted) {
+      this.statusD = !this.statusD;
+      post.count += 1;
+      this.downvoted = false;
+    } else {
+      this.downvoted = true;
+      post.count -= 1;
+      this.statusD = !this.statusD;
     }
   }
 

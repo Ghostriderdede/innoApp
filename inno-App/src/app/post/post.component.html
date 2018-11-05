@@ -1,16 +1,40 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+
 <div *ngFor = "let post of posts" class = "card">
+  <mat-grid-list cols="12"  rowHeight="2:4">
+    <mat-grid-tile colspan="3" >
+    <button (click) ="upvote(post)"
+    [ngClass]="status ? 'color' : ''">
+      <i class="material-icons">thumb_up</i>
+    </button>
+    </mat-grid-tile>
+    <mat-grid-tile colspan="9" >
+      <h4>{{post.Header}}</h4>
+    </mat-grid-tile>
 
-  <h2>{{post.Header}}</h2>
+  </mat-grid-list>
 
-  <button (click) ="upvote(post)">UP</button>
-  <button (click) ="downvote(post)">DOWN</button>
-  <p>{{post.count}}</p>
+  <mat-grid-list cols="12"  rowHeight="2:4">
+  <mat-grid-tile colspan="3" rowspan="1" >
+  <button (click) ="downvote(post)"
+  [ngClass]="statusD ? 'colorDown' : ''">
+<i class="material-icons">thumb_down</i>
+  </button>
+  </mat-grid-tile>
+    <mat-grid-tile colspan="9" rowspan="2">
+      <p>{{post.Description}}</p>
+    </mat-grid-tile>
+  <mat-grid-tile colspan="3" rowspan="1">
+      <p>{{post.count}}</p>
+  </mat-grid-tile>
+</mat-grid-list>
 
 
 
-  <p>
-  {{post.Description}}
-  </p>
+
+
 
 
 
