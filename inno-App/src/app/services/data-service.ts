@@ -1,3 +1,4 @@
+
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs/RX';
@@ -31,5 +32,13 @@ export class DataService {
 
   putPost(post: Post): Observable<any> {
     return this.http.post( this.url + "/posts", post);
+  }
+
+  putPostIdea(post: Post): Observable<any> {
+    return this.http.post( this.url + "/postsToCheck", post);
+  }
+
+  deletePostIdea(post: Post): Observable<any> {
+    return this.http.delete( this.url + "/postsToCheck/" + post.id);
   }
 }

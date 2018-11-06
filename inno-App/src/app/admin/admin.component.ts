@@ -17,4 +17,11 @@ export class AdminComponent implements OnInit {
     );
   }
 
+  aprove(post) {
+    this.data.putPost(post).subscribe(
+      respone => console.log(respone),
+      error => console.log(error)
+    );
+  }
+
 }

@@ -5,8 +5,7 @@
 <div *ngFor = "let post of posts" class = "card">
   <mat-grid-list cols="12"  rowHeight="2:4">
     <mat-grid-tile colspan="3" >
-    <button (click) ="upvote(post)"
-    [ngClass]="status ? 'color' : ''">
+    <button (click) ="upvote(post); upvoteCss($event)">
       <i class="material-icons">thumb_up</i>
     </button>
     </mat-grid-tile>
@@ -18,8 +17,7 @@
 
   <mat-grid-list cols="12"  rowHeight="2:4">
   <mat-grid-tile colspan="3" rowspan="1" >
-  <button (click) ="downvote(post)"
-  [ngClass]="statusD ? 'colorDown' : ''">
+  <button (click) ="downvote(post); downvoteCss($event)">
 <i class="material-icons">thumb_down</i>
   </button>
   </mat-grid-tile>
