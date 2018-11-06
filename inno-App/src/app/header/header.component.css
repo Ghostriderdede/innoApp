@@ -1,5 +1,5 @@
 mat-toolbar {
-  background-color: #22223B;
+  background-color: #2B4162;
   display: flex;
   scroll-behavior: smooth;
   width: 100%;
@@ -15,4 +15,9 @@ mat-toolbar {
   /* Set the fixed height of the footer here */
   height: 60px;
   line-height: 60px;
+}
+
+p {
+  padding-left: 8em;
+  color: #D7B377;
 }

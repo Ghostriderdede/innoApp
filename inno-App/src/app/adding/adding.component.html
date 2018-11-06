@@ -1,15 +1,17 @@
 <app-header></app-header>
-<br>
-<br>
-<br>
+
 <form>
+<p>
+Über das nachfolgende Formular können Sie eine Idee einreichen:
+</p>
+
 <input placeholder="Ihre Idee" (keyup)="postHeader($event)"/>
 <br>
 <textarea placeholder="Beschreiben Sie Ihre Idee" rows="6" (keyup)="postDescription($event)"></textarea>
-</form>
+
 
 <button (click) ="sendPost()">Idee veröffentlichen</button>
 
-<p>Bitte beachten Sie, dass Ihre Idee zunächst von einem Administratoren Team geprüft wird, bevor sie in der App erscheint</p>
-
+<p>Bitte beachten Sie, dass Ihre Idee zunächst von einem Administratoren <br> Team geprüft wird, bevor sie in der App angezeigt wird.</p>
+</form>
 <app-navbar></app-navbar>
