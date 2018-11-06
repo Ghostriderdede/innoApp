@@ -1,6 +1,6 @@
 
 nav {
-  background-color: #C2A12D;
+  background-color: #22223B;
   display: flex;
   scroll-behavior: smooth;
   position: fixed;
@@ -11,15 +11,12 @@ nav {
 a {
   margin: auto;
   font-size: 200%;
+  color: #9A8C98;
 }
-
-
-
 
 link {
   height: 50px;
   width: 50px;
-  color: blue;
 }
 
 .footer {
@@ -30,4 +27,9 @@ link {
   /* Set the fixed height of the footer here */
   height: 60px;
   line-height: 60px;
+}
+
+.navbar {
+  border-top-color: green;
+  border-width: thick;
 }

@@ -33,15 +33,9 @@
       "count": 4
     },
     {
-      "Header": "Das liegt mir wirklich am Herzen!",
-      "Description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore",
-      "id": "67e75d49-96a8-4c92-8c5a-4601fcf1aadc",
-      "count": 8
-    },
-    {
-      "Header": "Test",
-      "Description": "Diese Idee sollte jetzt bei einem admin landen",
-      "id": "be308ff2-9625-4583-b7d5-3c066485e14c",
+      "Header": "Test123",
+      "Description": "hrguyhuhrysgh",
+      "id": "3d5b8279-2dd8-46c1-85e4-991b7d333361",
       "count": 0
     }
   ],
@@ -61,21 +55,15 @@
   ],
   "postsToCheck": [
     {
-      "Header": "agbhaerhgerdxbdfrxb",
-      "Description": "rddbrdbxfbfgbngf",
-      "id": "45ae7a00-9e32-4b3a-bfb0-97f70accd084",
-      "approved": false
-    },
-    {
-      "Header": "agbhaerhgerdxbdfrxb",
-      "Description": "rddbrdbxfbfgbngf",
-      "id": "45ae7a00-9e32-4b3a-bfb0-97f70accd084",
-      "approved": false
-    },
-    {
       "Header": "Test",
-      "Description": "Diese Idee sollte jetzt bei einem admin landen",
+      "Description": "Diese Idee sollte jetzt bei einem admin liegen",
       "id": "be308ff2-9625-4583-b7d5-3c066485e14c",
+      "count": 0
+    },
+    {
+      "Header": "Test123",
+      "Description": "hrguyhuhrysgh",
+      "id": "3d5b8279-2dd8-46c1-85e4-991b7d333361",
       "count": 0
     }
   ]
