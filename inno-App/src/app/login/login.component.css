@@ -9,3 +9,25 @@ button {
   margin-left: 35%;
   border-color: black;
 }
+
+form {
+  background-color: #385F71;
+}
+
+p {
+  text-align: center;
+  padding-top: 10%;
+  color: #D7B377;
+}
+
+#trenner {
+  margin-top: 30px;
+  width: 95%;
+  height: 30px;
+  background-color: #2B4162;
+  position: absolute;
+}
+
+h3 {
+  color: #8F754F;
+}

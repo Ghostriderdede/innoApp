@@ -1,14 +1,10 @@
 <app-header></app-header>
 
 <form>
-<p>
-Über das nachfolgende Formular können Sie eine Idee einreichen:
-</p>
 
 <input placeholder="Ihre Idee" (keyup)="postHeader($event)"/>
-<br>
-<textarea placeholder="Beschreiben Sie Ihre Idee" rows="6" (keyup)="postDescription($event)"></textarea>
 
+<textarea placeholder="Beschreiben Sie Ihre Idee" rows="6" (keyup)="postDescription($event)"></textarea>
 
 <button (click) ="sendPost()">Idee veröffentlichen</button>
 

@@ -33,9 +33,9 @@
       "count": 4
     },
     {
-      "Header": "Test123",
-      "Description": "hrguyhuhrysgh",
-      "id": "3d5b8279-2dd8-46c1-85e4-991b7d333361",
+      "Header": "Eine Azubi Idee",
+      "Description": "lblblblbljrfgjirdhgiohihwrhiga",
+      "id": "4f5db664-3fed-4ddc-b5d2-61c69ed06ace",
       "count": 0
     }
   ],
@@ -56,14 +56,14 @@
   "postsToCheck": [
     {
       "Header": "Test",
-      "Description": "Diese Idee sollte jetzt bei einem admin liegen",
+      "Description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt",
       "id": "be308ff2-9625-4583-b7d5-3c066485e14c",
       "count": 0
     },
     {
-      "Header": "Test123",
-      "Description": "hrguyhuhrysgh",
-      "id": "3d5b8279-2dd8-46c1-85e4-991b7d333361",
+      "Header": "Eine Azubi Idee",
+      "Description": "lblblblbljrfgjirdhgiohihwrhiga",
+      "id": "4f5db664-3fed-4ddc-b5d2-61c69ed06ace",
       "count": 0
     }
   ]

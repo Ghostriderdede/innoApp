@@ -2,18 +2,23 @@
 <div style="text-align:center">
   <br>
   <h3>
-    Welcome to InnoApp!
+    Ideen. Innovationen.
   </h3>
   <br>
   <br>
-  <img width="100" alt="Angular Logo" src="../assets/images/Logo_DVAG.jpg">
+  <img width="100" alt="Logo" src="../assets/images/Logo_DVAG.jpg">
 </div>
+<div id="trenner"></div>
 <br>
 <br>
-<p> Bitte melden Sie sich an, um die App zu nutzen: </p>
 <form>
-    <input placeholder="Ihre Kennung" (keyup)="userID($event)"/>
+<p> Bitte melden Sie sich an, um die App zu nutzen: </p>
+  <input placeholder="Ihre Kennung" (keyup)="userID($event)"/>
     <br>
     <input placeholder="Passwort" type="password" (keyup)="userPW($event)"/>
+      <button (click)="printUser()">Anmelden</button>
+      <br>
+      <br>
+      <br>
+      <br>
 </form>
-    <button (click)="printUser()">Anmelden</button>
